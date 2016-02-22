@@ -35,10 +35,10 @@ class UserSpec extends Specification {
         username.equals(validname)
         where:
         uname         | fname      | lname       | mail           | pwd           | admn  | active | dateCreated    | lastUpdated    | valid | validname
-        "sagar"       | "sagar"    | "mal"       | "sa@gm.LinkSharing"    | "amaxx"       | true  | true   | null           | null           | true  | "sagar"
-        "sagarmal624" | ""         | null        | "sa@gm.LinkSharing"    | "sagar"       | false | false  | null           | new Date()     | false | "sagarmal624"
+        "sagar"       | "sagar"    | "mal"       | "sa@gm.com"    | "amaxx"       | true  | true   | null           | null           | true  | "sagar"
+        "sagarmal624" | ""         | null        | "sa@gm.com"    | "sagar"       | false | false  | null           | new Date()     | false | "sagarmal624"
         "123"         | null       | "sagar  "   | null           | "12345670890" | true  | null   | null           | new Date()     | false | "123"
-        "sagar"       | "sagarmal" | "shankhala" | "sagar@gm.LinkSharing" | "125"         | false | true   | 02 - 01 - 1993 | 02 - 01 - 1993 | false | "sagar"
+        "sagar"       | "sagarmal" | "shankhala" | "sagar@gm.com" | "125"         | false | true   | 02 - 01 - 1993 | 02 - 01 - 1993 | false | "sagar"
         "sagar"       | " "        | " "         | ""             | ""            | null  | null   | null           | null           | false | "sagar"
         "shankhala"   | null       | null        | null           | null          | null  | null   | null           | true           | false | "shankhala"
 
