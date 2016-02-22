@@ -32,7 +32,7 @@ import liquibase.statement.SqlStatement
  * <code>CreateTableGenerator</code> to just override <code>generateSql</code>:
  * 'Method "generateSql" in class grails/plugin/databasemigration/MysqlAwareCreateTableGenerator has illegal signature "L[Lliquibase/sql/Sql;;"'.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class MysqlAwareCreateTableGenerator implements SqlGenerator {
 

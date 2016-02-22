@@ -17,7 +17,7 @@ package grails.plugin.databasemigration.dbdoc
 import liquibase.resource.ResourceAccessor
 
 /**
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class ChangeLogWriter {
 	protected ResourceAccessor resourceAccessor

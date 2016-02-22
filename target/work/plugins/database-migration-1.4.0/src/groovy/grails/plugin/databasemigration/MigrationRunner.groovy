@@ -26,7 +26,7 @@ import org.slf4j.LoggerFactory
  * Based on the class of the same name from Mike Hugo's liquibase-runner plugin.
  *
  * @author Mike Hugo
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class MigrationRunner {
 

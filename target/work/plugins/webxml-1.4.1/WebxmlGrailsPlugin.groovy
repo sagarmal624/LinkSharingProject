@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory
  *
  * History
  *   1.0 Roger Cass, Filter/BeanMapping
- *   1.1 ericacm - gmail.com, Listener
+ *   1.1 ericacm - gmail.LinkSharing, Listener
  *   1.2 Bob Schulze al.lias - web.de, Context Parameters
  *   1.3 Burt Beckwith; added new feature to order filter-mapping elements
  *   1.4 Stefano Gualdi; added patch from Daniel Bower to support session-timeout setting
@@ -46,10 +46,10 @@ class WebxmlGrailsPlugin {
 	def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPWEBXML']
 	def scm = [url: 'http://plugins.grails.org/grails-webxml/']
 	def developers = [
-		[name: "Eric Pederson",  email: "ericacm@gmail.com"],
+		[name: "Eric Pederson",  email: "ericacm@gmail.LinkSharing"],
 		[name: "Bob Schulze",    email: "al.lias@gmx.de"],
-		[name: "Burt Beckwith",  email: "beckwithb@vmware.com"],
-		[name: "Stefano Gualdi", email: "stefano.gualdi@gmail.com"]
+		[name: "Burt Beckwith",  email: "beckwithb@vmware.LinkSharing"],
+		[name: "Stefano Gualdi", email: "stefano.gualdi@gmail.LinkSharing"]
 	]
 
 	def doWithWebDescriptor = { xml ->

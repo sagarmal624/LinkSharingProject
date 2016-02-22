@@ -29,7 +29,7 @@ import org.codehaus.groovy.grails.support.PersistenceContextInterceptorExecutor
 import org.springframework.transaction.support.TransactionSynchronizationManager
 
 /**
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class MigrationUtils {
 

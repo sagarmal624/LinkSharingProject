@@ -23,7 +23,7 @@ import liquibase.serializer.core.xml.XMLChangeLogSerializer
  * Reorder ChangeSets with Foreign Key changes to the end of changes.<p/>
  *
  * MySQL need the Indexes created before a Foreign Key with the same name, elsewhere it throws an ERROR 1280 (42000): Incorrect index name '*INDEXNAME*'
- * @see <a href="http://bugs.mysql.com/bug.php?id=55465">http://bugs.mysql.com/bug.php?id=55465</a>
+ * @see <a href="http://bugs.mysql.LinkSharing/bug.php?id=55465">http://bugs.mysql.LinkSharing/bug.php?id=55465</a>
  */
 class MySQLCompatibleChangeLogSerializer extends XMLChangeLogSerializer {
 

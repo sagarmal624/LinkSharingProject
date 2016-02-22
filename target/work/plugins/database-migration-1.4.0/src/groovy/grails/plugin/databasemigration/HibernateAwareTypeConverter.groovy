@@ -44,7 +44,7 @@ import liquibase.servicelocator.PrioritizedService
  * creating valid SQL types. The strings that Liquibase generates often include size information
  * that the database doesn't support.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class HibernateAwareTypeConverter implements TypeConverter {
 

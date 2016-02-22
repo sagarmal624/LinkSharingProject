@@ -17,7 +17,7 @@ package grails.plugin.databasemigration
 /**
  * Generates a Groovy DSL version of a Liquibase XML changelog.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class ChangelogXml2Groovy {
 

@@ -21,7 +21,7 @@ import liquibase.database.typeconversion.core.DefaultTypeConverter
 /**
  * Fixes changelog errors generated from the GORM scripts.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class GormDatabaseTypeConverter extends DefaultTypeConverter {
 

@@ -18,7 +18,7 @@ import liquibase.change.Change
 import liquibase.database.Database
 
 /**
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class AuthorWriter extends HTMLWriter {
 

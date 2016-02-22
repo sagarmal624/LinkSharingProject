@@ -27,7 +27,7 @@ includeTargets << new File("$databaseMigrationPluginDir/scripts/_DatabaseMigrati
  * Doesn't modify any existing files - you need to manually merge the output into the
  * changeset along with any necessary modifications.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 
 target(dbmGormDiff: 'Diff GORM classes against database and generate a changelog') {

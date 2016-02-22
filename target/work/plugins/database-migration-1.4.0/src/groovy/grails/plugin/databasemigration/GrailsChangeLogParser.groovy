@@ -30,7 +30,7 @@ import org.springframework.context.ApplicationContext
  * Loads a DSL script and invokes the builder. Registered in
  * DatabaseMigrationGrailsPlugin.doWithApplicationContext().
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class GrailsChangeLogParser implements ChangeLogParser {
 

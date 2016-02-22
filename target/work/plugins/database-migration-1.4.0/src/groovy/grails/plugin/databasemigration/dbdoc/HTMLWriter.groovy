@@ -23,7 +23,7 @@ import liquibase.util.LiquibaseUtil
 import liquibase.util.StringUtils
 
 /**
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 abstract class HTMLWriter {
 

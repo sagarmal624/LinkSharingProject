@@ -31,7 +31,7 @@ var requirejs, require, define, xpcUtil;
         readFile = typeof readFileFunc !== 'undefined' ? readFileFunc : null;
 
     function showHelp() {
-        console.log('See https://github.com/jrburke/r.js for usage.');
+        console.log('See https://github.LinkSharing/jrburke/r.js for usage.');
     }
 
     if ((typeof navigator !== 'undefined' && typeof document !== 'undefined') ||
@@ -2063,7 +2063,7 @@ var requirejs, require, define, xpcUtil;
                 //404s in IE9+. However, onreadystatechange will fire before
                 //the error handler, so that does not help. If addEventListener
                 //is used, then IE will fire error before load, but we cannot
-                //use that pathway given the connect.microsoft.com issue
+                //use that pathway given the connect.microsoft.LinkSharing issue
                 //mentioned above about not doing the 'script execute,
                 //then fire the script load event listener before execute
                 //next script' that other browsers do.
@@ -4346,13 +4346,13 @@ define('logger', ['env!env/print'], function (print) {
 //Commit 465a4eae86c7bae191b1ee427571543ace777117 on July 19, 2012
 define('esprima', ['exports'], function(exports) {
 /*
-  Copyright (C) 2012 Ariya Hidayat <ariya.hidayat@gmail.com>
+  Copyright (C) 2012 Ariya Hidayat <ariya.hidayat@gmail.LinkSharing>
   Copyright (C) 2012 Mathias Bynens <mathias@qiwi.be>
   Copyright (C) 2012 Joost-Wim Boekesteijn <joost-wim@boekesteijn.nl>
-  Copyright (C) 2012 Kris Kowal <kris.kowal@cixar.com>
-  Copyright (C) 2012 Yusuke Suzuki <utatane.tea@gmail.com>
-  Copyright (C) 2012 Arpad Borsos <arpad.borsos@googlemail.com>
-  Copyright (C) 2011 Ariya Hidayat <ariya.hidayat@gmail.com>
+  Copyright (C) 2012 Kris Kowal <kris.kowal@cixar.LinkSharing>
+  Copyright (C) 2012 Yusuke Suzuki <utatane.tea@gmail.LinkSharing>
+  Copyright (C) 2012 Arpad Borsos <arpad.borsos@googlemail.LinkSharing>
+  Copyright (C) 2011 Ariya Hidayat <ariya.hidayat@gmail.LinkSharing>
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are met:
@@ -9160,12 +9160,12 @@ define('uglifyjs/parse-js', ["exports"], function(exports) {
   -------------------------------- (C) ---------------------------------
 
                            Author: Mihai Bazon
-                         <mihai.bazon@gmail.com>
+                         <mihai.bazon@gmail.LinkSharing>
                        http://mihai.bazon.net/blog
 
   Distributed under the BSD license:
 
-    Copyright 2010 (c) Mihai Bazon <mihai.bazon@gmail.com>
+    Copyright 2010 (c) Mihai Bazon <mihai.bazon@gmail.LinkSharing>
     Based on parse-js (http://marijn.haverbeke.nl/parse-js/).
 
     Redistribution and use in source and binary forms, with or without
@@ -10612,12 +10612,12 @@ define('uglifyjs/process', ["require", "exports", "module", "./parse-js", "./squ
   -------------------------------- (C) ---------------------------------
 
                            Author: Mihai Bazon
-                         <mihai.bazon@gmail.com>
+                         <mihai.bazon@gmail.LinkSharing>
                        http://mihai.bazon.net/blog
 
   Distributed under the BSD license:
 
-    Copyright 2010 (c) Mihai Bazon <mihai.bazon@gmail.com>
+    Copyright 2010 (c) Mihai Bazon <mihai.bazon@gmail.LinkSharing>
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
@@ -13916,7 +13916,7 @@ exports.SourceNode = require('./source-map/source-node').SourceNode;
 });
 
 //Distributed under the BSD license:
-//Copyright 2012 (c) Mihai Bazon <mihai.bazon@gmail.com>
+//Copyright 2012 (c) Mihai Bazon <mihai.bazon@gmail.LinkSharing>
 define('uglifyjs2', ['exports', 'source-map', 'logger'], function (exports, MOZ_SourceMap, logger) {
 (function(exports, global) {
     global["UglifyJS"] = exports;
@@ -21532,7 +21532,7 @@ if(env === 'rhino') {
  */
 
 /*jslint sloppy: true, plusplus: true */
-/*global define, java, Packages, com */
+/*global define, java, Packages, LinkSharing */
 
 define('rhino/optimize', ['logger', 'env!env/file'], function (logger, file) {
 

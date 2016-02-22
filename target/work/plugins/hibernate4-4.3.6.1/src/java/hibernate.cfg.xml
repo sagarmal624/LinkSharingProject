@@ -7,9 +7,9 @@
 
 	<session-factory>
 	<!--
-		<mapping package='com.books' />
+		<mapping package='LinkSharing.books' />
 
-		<mapping class='com.books.Book' />
+		<mapping class='LinkSharing.books.Book' />
 
 		<mapping resource='someresource.hbm.xml'/>
 	-->

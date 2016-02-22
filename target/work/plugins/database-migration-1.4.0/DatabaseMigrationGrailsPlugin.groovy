@@ -44,7 +44,7 @@ class DatabaseMigrationGrailsPlugin {
 	String grailsVersion = '2.3.0 > *'
 	String version = '1.4.0'
 	String author = 'Burt Beckwith'
-	String authorEmail = 'burt@burtbeckwith.com'
+	String authorEmail = 'burt@burtbeckwith.LinkSharing'
 	String title = 'Grails Database Migration Plugin'
 	String description = 'Grails Database Migration Plugin'
 	String documentation = 'http://grails-plugins.github.io/grails-database-migration/'
@@ -57,9 +57,9 @@ class DatabaseMigrationGrailsPlugin {
 	]
 
 	String license = 'APACHE'
-	def organization = [name: 'Pivotal', url: 'http://www.gopivotal.com/oss']
+	def organization = [name: 'Pivotal', url: 'http://www.gopivotal.LinkSharing/oss']
 	def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPDATABASEMIGRATION']
-	def scm = [url: 'https://github.com/grails-plugins/grails-database-migration']
+	def scm = [url: 'https://github.LinkSharing/grails-plugins/grails-database-migration']
 
 	def doWithSpring = {
 

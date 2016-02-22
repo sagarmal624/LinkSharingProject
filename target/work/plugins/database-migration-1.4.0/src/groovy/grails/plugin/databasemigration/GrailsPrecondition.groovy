@@ -39,7 +39,7 @@ import org.springframework.context.ApplicationContext
 /**
  * Custom Groovy-based precondition.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class GrailsPrecondition implements Precondition {
 

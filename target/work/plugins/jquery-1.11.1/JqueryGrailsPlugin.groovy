@@ -39,12 +39,12 @@ class JqueryGrailsPlugin {
 	def documentation = "http://grails.org/plugin/jquery"
 	def license = "APACHE"
 	def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPJQUERY" ]
-	def scm = [ url: "https://github.com/gpc/grails-jquery" ]
-	def organization = [ name: "Grails Plugin Collective", url: "http://github.com/gpc" ]
+	def scm = [ url: "https://github.LinkSharing/gpc/grails-jquery" ]
+	def organization = [ name: "Grails Plugin Collective", url: "http://github.LinkSharing/gpc" ]
 	def developers = [
-		[name: "Sergey Nebolsin", email: "nebolsin@gmail.com"],
-		[name: "Craig Jones", email: "craigjones@maximsc.com"],
-		[name: "Marc Palmer", email: "marc@grailsrocks.com"],
+		[name: "Sergey Nebolsin", email: "nebolsin@gmail.LinkSharing"],
+		[name: "Craig Jones", email: "craigjones@maximsc.LinkSharing"],
+		[name: "Marc Palmer", email: "marc@grailsrocks.LinkSharing"],
 		[name: "Finn Herpich", email: "finn.herpich@marfinn-software.de"]
 	]
 

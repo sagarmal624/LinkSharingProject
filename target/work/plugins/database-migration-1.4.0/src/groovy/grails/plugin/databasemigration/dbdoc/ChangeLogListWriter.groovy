@@ -15,7 +15,7 @@
 package grails.plugin.databasemigration.dbdoc
 
 /**
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class ChangeLogListWriter extends HTMLListWriter {
 	ChangeLogListWriter(Map files) {

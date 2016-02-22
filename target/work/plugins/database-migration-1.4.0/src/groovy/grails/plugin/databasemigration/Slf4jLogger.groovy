@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory
 /**
  * Logger that uses Grails Slf4j loggers and configuration.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class Slf4jLogger implements liquibase.logging.Logger {
 

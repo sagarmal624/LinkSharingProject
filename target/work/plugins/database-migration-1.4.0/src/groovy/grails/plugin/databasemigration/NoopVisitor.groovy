@@ -23,7 +23,7 @@ import liquibase.database.Database
 /**
  * Used in ScriptUtils.generatePreviousChangesetSql.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class NoopVisitor implements ChangeSetVisitor {
 

@@ -38,7 +38,7 @@ class Hibernate4GrailsPlugin {
 	def license = 'APACHE'
 	def organization = [name: 'SpringSource', url: 'http://www.springsource.org/']
 	def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPHIB']
-	def scm = [url: 'https://github.com/grails-plugins/grails-hibernate4-plugin']
+	def scm = [url: 'https://github.LinkSharing/grails-plugins/grails-hibernate4-plugin']
 
 	def doWithSpring = HibernatePluginSupport.doWithSpring
 

@@ -20,7 +20,7 @@ import liquibase.database.DatabaseConnection
 /**
  * Used by the gorm-diff script. Doesn't do much - it's mostly a holder for the configuration.
  *
- * @author <a href='mailto:burt@burtbeckwith.com'>Burt Beckwith</a>
+ * @author <a href='mailto:burt@burtbeckwith.LinkSharing'>Burt Beckwith</a>
  */
 class GormDatabase extends AbstractDatabase {
 
