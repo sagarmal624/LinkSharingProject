@@ -12,6 +12,9 @@ class User {
     Date lastUpdated
     transient confirmPassword
     static hasMany = [topics:Topic,subscriptions:Subscription,resources:Resource,resource_ratings:Resource_Rating,readingItems:ReadingItem]
+    static mapping = {
+        sort id:"desc"
+    }
     static constraints = {
         username(blank:false,nullable:false,unique:true)
         firstname (blank: false, nullable: false)
@@ -29,7 +32,7 @@ class User {
         resource_ratings(nullable:true)
         readingItems(nullable:true)
         //confirmPassword(blank:true,nullable:true,validator:{val,obj-> return !val.equals(obj.password)})
-        confirmPassword nullable:true, blank:true, validator: { val, object ->
+        confirmPassword bindable:true ,nullable:true, blank:true, validator: { val, object ->
             if ((val != object.password)) {
                 return false
             }

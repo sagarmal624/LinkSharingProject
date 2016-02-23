@@ -4,14 +4,22 @@ import com.ttnd.LinkSharing.Subscription
 import com.ttnd.LinkSharing.Topic
 import com.ttnd.LinkSharing.User
 import com.ttnd.LinkSharing.Visibility
-
 class TopicController {
+    def save(String topicname,String visibility){
+         User user=User.findByFirstname(session.user)
+         Topic topic=new Topic(name:topicname,createdBy:user,visibility:Visibility.toEnum(visibility)).save(flash:true,failOnError:"true")
+         if(topic==null)
+         {
+             flash.error="Validation Error"
+           render flash.error
+         }else {
+             render "success"
+         }
+    }
+    def show(long id){
+        Topic topic=Topic.read(id)
 
-    def index() { }
-    def show(){
-        println"0...............show id...." +params.id
-        Topic topic=Topic.get(params.id)
-          if(topic==null)
+        if(topic==null)
           {
               flash.error="Topic is not found with given id"
            redirect(action:"index",controller:"login")

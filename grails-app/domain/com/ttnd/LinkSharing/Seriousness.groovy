@@ -5,4 +5,14 @@ package com.ttnd.LinkSharing
  */
 enum Seriousness {
     SERIOUS,VERY_SERIOUS,CASUAL
+    public static Seriousness getSeriousness(String str){
+        if(str.equalsIgnoreCase("serious"))
+        {
+            return Seriousness.SERIOUS
+        }else
+        {
+ return Seriousness.VERY_SERIOUS
+        }
+    }
+
 }

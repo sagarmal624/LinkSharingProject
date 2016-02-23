@@ -7,7 +7,9 @@ class Topic {
     Date dateCreated
     Date lastUpdated
     Visibility visibility
-
+static mapping = {
+    sort name:"asc"
+}
     static constraints = {
         name(nullable:false,blank:false)//,validator:{ val, obj -> !(Topic.findAllById(createdBy).any(val))})
         dateCreated(nullable:true)
