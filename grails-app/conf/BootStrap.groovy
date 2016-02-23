@@ -146,6 +146,16 @@ class BootStrap {
             log.error "error during inserting automatic subscriptions...."
     }
 
+    def init = {
+//        log.info "bootstrap is started............."
+//        createUser()
+//        createTopic()
+//        createResources()
+//        subscribeTopics()
+//        createReadingItems()
+//        createResourceRatings()
+//        log.info "at the end of bootstrap......"
+    }
     def createUser() {
         if (User.count() == 0) {
             User user = new User(username: "sagar1201624", firstname: "sagar", lastname: "shankhala", password: PasswordConstant.PASSWORD, email: "sagar232112044a@gmail.com", admin: false)
@@ -166,16 +176,6 @@ class BootStrap {
                 log.info "admin User is inserted"
         } else
             log.info ".....already Records are exist................"
-    }
-    def init = {
-        log.info "bootstrap is started............."
-        createUser()
-        createTopic()
-        createResources()
-        subscribeTopics()
-        createReadingItems()
-        createResourceRatings()
-        log.info "at the end of bootstrap......"
     }
     def destroy = {
     }

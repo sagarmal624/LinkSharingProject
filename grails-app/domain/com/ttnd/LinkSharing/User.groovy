@@ -10,7 +10,7 @@ class User {
     byte[] photo
     Date dateCreated
     Date lastUpdated
-
+    transient confirmPassword
     static hasMany = [topics:Topic,subscriptions:Subscription,resources:Resource,resource_ratings:Resource_Rating,readingItems:ReadingItem]
     static constraints = {
         username(blank:false,nullable:false,unique:true)
@@ -28,6 +28,13 @@ class User {
         resources(nullable:true)
         resource_ratings(nullable:true)
         readingItems(nullable:true)
+        //confirmPassword(blank:true,nullable:true,validator:{val,obj-> return !val.equals(obj.password)})
+        confirmPassword nullable:true, blank:true, validator: { val, object ->
+            if ((val != object.password)) {
+                return false
+            }
+            return true
+        }
 
     }
     public String toString()
