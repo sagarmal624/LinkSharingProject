@@ -1,5 +1,7 @@
 package com.ttnd.LinkSharing
 
+import Enums.Seriousness
+
 class Subscription {
     static belongsTo=[user:User,topic:Topic]
     Seriousness seriousness;

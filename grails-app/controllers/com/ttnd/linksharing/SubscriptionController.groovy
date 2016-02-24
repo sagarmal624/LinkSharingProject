@@ -1,6 +1,6 @@
 package com.ttnd.linksharing
 
-import com.ttnd.LinkSharing.Seriousness
+import Enums.Seriousness
 import com.ttnd.LinkSharing.Subscription
 import com.ttnd.LinkSharing.Topic
 import com.ttnd.LinkSharing.User

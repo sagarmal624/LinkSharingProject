@@ -1,9 +1,11 @@
 package com.ttnd.linksharing
 
+import com.ttnd.LinkSharing.Resource
+import com.ttnd.LinkSharing.ResourceSearchCo
 import com.ttnd.LinkSharing.Subscription
 import com.ttnd.LinkSharing.Topic
 import com.ttnd.LinkSharing.User
-import com.ttnd.LinkSharing.Visibility
+import Enums.Visibility
 class TopicController {
     def save(String topicname,String visibility){
          User user=User.findByFirstname(session.user)
@@ -16,8 +18,11 @@ class TopicController {
              render "success"
          }
     }
-    def show(long id){
-        Topic topic=Topic.read(id)
+    def show(long id, ResourceSearchCo co){
+
+        List<Resource>resources=Resource.search(co).list()
+        println "----------------====>>>>"+resources
+      Topic topic=Topic.read(id)
 
         if(topic==null)
           {

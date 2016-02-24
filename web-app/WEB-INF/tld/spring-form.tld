@@ -1072,7 +1072,7 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
-			<description>The Collection, Map or array of objects used to generate the inner 'option' tags. This attribute is required unless the containing select's property for data binding is an Enum, in which case the enum's values are used.</description>
+			<description>The Collection, Map or array of objects used to generate the inner 'option' tags. This attribute is required unless the containing select's property for data binding is an Enums, in which case the enum's values are used.</description>
 			<name>items</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
@@ -1532,7 +1532,7 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
-			<description>The Collection, Map or array of objects used to generate the 'input' tags with type 'radio'. This attribute is required unless the property for data binding is an Enum, in which case the enum's values are used.</description>
+			<description>The Collection, Map or array of objects used to generate the 'input' tags with type 'radio'. This attribute is required unless the property for data binding is an Enums, in which case the enum's values are used.</description>
 			<name>items</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>

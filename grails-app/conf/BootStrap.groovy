@@ -1,12 +1,13 @@
 import com.ttnd.LinkSharing.Link_Resource
+import com.ttnd.LinkSharing.PasswordConstant
 import com.ttnd.LinkSharing.ReadingItem
 import com.ttnd.LinkSharing.Resource_Rating
 import com.ttnd.LinkSharing.Topic
 import com.ttnd.LinkSharing.User
 import com.ttnd.LinkSharing.Resource
 import com.ttnd.LinkSharing.Document_Resource
-import com.ttnd.LinkSharing.Visibility
-import com.ttnd.LinkSharing.Seriousness
+import Enums.Visibility
+import Enums.Seriousness
 class BootStrap {
     def createResourceRatings() {
         List<ReadingItem> readingItems = ReadingItem.findAllByIsReadNotEqual(true)
@@ -53,7 +54,12 @@ class BootStrap {
             log.info(".....creating topic for .userid:.... ${user}...............................")
             if (Topic.countByCreatedBy(user) == 0) {
                 (1..5).each {
-                    Topic topic = new Topic(name: "Grails${it}", visibility: Visibility.PUBLIC)
+                    Topic topic
+                    if(it%2)
+                     topic= new Topic(name: "Grails${it}", visibility: Visibility.PRIVATE)
+                    else
+                         topic = new Topic(name: "Grails${it}", visibility: Visibility.PUBLIC)
+
                     user = User.get(i).addToTopics(topic).save(flush: true, failOnError: true)
                     if (user == null) {
                         log.error "error during inserting topics to user:${user}"
@@ -147,18 +153,19 @@ class BootStrap {
     }
 
     def init = {
-//        log.info "bootstrap is started............."
+        log.info "bootstrap is started............."
 //        createUser()
 //        createTopic()
 //        createResources()
 //        subscribeTopics()
 //        createReadingItems()
 //        createResourceRatings()
-//        log.info "at the end of bootstrap......"
+        log.info "at the end of bootstrap......"
     }
     def createUser() {
         if (User.count() == 0) {
-            User user = new User(username: "sagar1201624", firstname: "sagar", lastname: "shankhala", password: PasswordConstant.PASSWORD, email: "sagar232112044a@gmail.com", admin: false)
+
+            User user = new User(username: "sagar1201624", firstname: "sagar", lastname: "shankhala", password: PasswordConstant.PASSWORD,confirmPassword:PasswordConstant.PASSWORD , email: "sagar232112044a@gmail.com", admin: false)
             log.info "................before normal user is inserted........."
             if (user.save(flush: true, failOnError: true) == null)
                 log.error(".........Error during normal user is inserted..............")
@@ -168,7 +175,7 @@ class BootStrap {
 
 
             log.info ".....before admin user is inserted......."
-            User admin = new User(username: "sag2ar1063mal", firstname: "sagar", lastname: "shankhala", password: PasswordConstant.PASSWORD, email: "sa123ga2r0a@gmail.com", admin: true)
+            User admin = new User(username: "sag2ar1063mal", firstname: "sagar", lastname: "shankhala", password: PasswordConstant.PASSWORD, confirmPassword:PasswordConstant.PASSWORD,email: "sa123ga2r0a@gmail.com", admin: true)
             if (admin.save(flush: true, failOnError: true) == null)
 
                 log.error(".........Error during admin is inserted..............")

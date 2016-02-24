@@ -25,19 +25,19 @@ class ApplicationFilters {
                             log.info "..........user is not log in"
                     }
                 }
-        loginCheck(action: "*", controllerExclude: 'login')
-                {
-                    before = {
-                        if (session.user) {
-                            render session.user
-                        } else {
-                            flash.error = "Please Sign in........."
-                            redirect(action: "index", controller: "login")
-
-                        }
-                    }
-
-                }
+//        loginCheck(action: "*", controllerExclude: 'login')
+//                {
+//                    before = {
+//                        if (session.user) {
+//                            render session.user
+//                        } else {
+//                            flash.error = "Please Sign in........."
+//                            redirect(action: "index", controller: "login")
+//
+//                        }
+//                    }
+//
+//                }
 
     }
 }

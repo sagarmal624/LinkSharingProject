@@ -1,0 +1,1 @@
+<link rel="icon" type="image/png" href="${resource(file: 'img/grails.logo.png', plugin: 'console')}" />

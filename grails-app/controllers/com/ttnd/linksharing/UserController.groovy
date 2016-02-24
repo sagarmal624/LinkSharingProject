@@ -6,6 +6,14 @@ class UserController {
 
         render "${session.user} Dashboard"
     }
+    def topPost()
+    {
+       if(session.user==null){
+
+
+       }
+
+    }
     def register(String firstname,String lastname,String email,String username,String password,String confirmPassword){
         User registerUser = new User(firstname:firstname,lastname:lastname,email:email,username:username,password:password,confirmPassword:confirmPassword )
         if(registerUser.validate())
