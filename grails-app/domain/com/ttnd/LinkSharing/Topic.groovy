@@ -1,7 +1,5 @@
 package com.ttnd.LinkSharing
-
 import Enums.Visibility
-
 class Topic {
     String name;
     static belongsTo = [createdBy: User]

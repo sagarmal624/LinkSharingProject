@@ -1,5 +1,7 @@
 package com.ttnd.LinkSharing
 
+import Enums.Visibility
+
 abstract class Resource {
     String description;
     Date dateCreated;
@@ -34,12 +36,12 @@ abstract class Resource {
 
             if (co.topicId) {
                 eq('topic_id', co.topicId)
+                eq('visibility',Visibility.PUBLIC)
             }
             if(co.visibility){
                 'topic'{
                      eq("visibility",co.visibility)
                 }
-
             }
            }
     }

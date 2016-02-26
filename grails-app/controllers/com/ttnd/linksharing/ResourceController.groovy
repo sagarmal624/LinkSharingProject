@@ -17,7 +17,9 @@ class ResourceController {
           // forward(action:"index",controller:"login")
         } else {
             resource.delete(flush:true)
-         render "deleted"
+
+            render "deleted"
+
         }
     }
     def search(ResourceSearchCo co)

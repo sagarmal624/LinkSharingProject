@@ -1,5 +1,6 @@
 package com.ttnd.linksharing
 
+import com.ttnd.LinkSharing.Resource_Rating
 import com.ttnd.LinkSharing.User
 class UserController {
     def index() {
@@ -9,8 +10,6 @@ class UserController {
     def topPost()
     {
        if(session.user==null){
-
-
        }
 
     }
@@ -25,5 +24,29 @@ class UserController {
             render "error"
         }
     }
+    def show()
+    {
+        params.max= 1
+        params.offset = params.offset?:0
+        List<User> users = User.list(params)
+        render ([view:"show", model:[userCount:User.count() , users:users]])
+    }
+    def toppost(){
+
+        List<Resource_Rating>resources=Resource_Rating.createCriteria().list(max:5){
+            projections{
+                groupProperty('resource')
+                avg('score','avgScore')
+            }
+            'resource'{
+                property('id')
+            }
+            order('avgScore','desc')
+        }
+
+  render resources;
+        }
+
+
 
 }
