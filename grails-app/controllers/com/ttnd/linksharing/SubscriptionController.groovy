@@ -21,8 +21,7 @@ class SubscriptionController {
     def save(long topicId)
     {
         Subscription newSubscription = new Subscription(seriousness:Seriousness.SERIOUS,user:User.findByFirstname(session.user),topic:Topic.get(topicId))
-
-        if(newSubscription.validate())
+       if(newSubscription.validate())
         {
             newSubscription.save(flush:true)
             render("Success")
@@ -32,7 +31,7 @@ class SubscriptionController {
         }
 
     }
-    def update(int id,String seriousness)
+    def update(long id,String seriousness)
     {
         Subscription subscription = Subscription.findByIdAndSeriousness(id,Seriousness.getSeriousness(seriousness))
         if(subscription.validate())
