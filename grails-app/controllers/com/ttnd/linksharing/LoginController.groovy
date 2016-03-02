@@ -15,7 +15,7 @@ class LoginController {
 
     def loginHandler(String username,String password,Boolean active) {
         if (username == "sagar" && password == "sagar") {
-//            println active
+            println active
             if (active) {
                 session.user = username
                 println session.user
