@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="1" failures="0" hostname="sagar" id="0" name="ResourceControllerSpec" package="com.ttnd.linksharing" tests="1" time="6.498" timestamp="2016-02-23T11:41:07">
+  <testsuite errors="0" failures="0" hostname="sagar" id="0" name="LoginControllerSpec" package="com.ttnd.linksharing" tests="3" time="6.493" timestamp="2016-03-02T10:37:53">
       <properties />
 
-      <testcase classname="com.ttnd.linksharing.ResourceControllerSpec" name="test delete" time="6.418">
-          <error message="Proxy for [com.ttnd.LinkSharing.Resource:10] could not be initialized" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: Proxy for [com.ttnd.LinkSharing.Resource:10] could not be initialized
-	at org.grails.datastore.mapping.proxy.JavassistProxyFactory$1.resolveDelegate(JavassistProxyFactory.java:101)
-	at org.grails.datastore.mapping.proxy.EntityProxyMethodHandler.getProxyTarget(EntityProxyMethodHandler.java:89)
-	at org.grails.datastore.mapping.proxy.JavassistProxyFactory$1.handleInvocationFallback(JavassistProxyFactory.java:118)
-	at org.grails.datastore.mapping.proxy.EntityProxyMethodHandler.handleInvocation(EntityProxyMethodHandler.java:57)
-	at org.grails.datastore.mapping.proxy.GroovyObjectMethodHandler.invoke(GroovyObjectMethodHandler.java:134)
-	at com.ttnd.linksharing.ResourceController.delete(ResourceController.groovy:8)
-	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
-	at com.ttnd.linksharing.ResourceControllerSpec.test delete(ResourceControllerSpec.groovy:18)
-</error>
+      <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="test index" time="5.891" />
 
-          <error message="Proxy for [com.ttnd.LinkSharing.Resource:11] could not be initialized" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: Proxy for [com.ttnd.LinkSharing.Resource:11] could not be initialized
-	at org.grails.datastore.mapping.proxy.JavassistProxyFactory$1.resolveDelegate(JavassistProxyFactory.java:101)
-	at org.grails.datastore.mapping.proxy.EntityProxyMethodHandler.getProxyTarget(EntityProxyMethodHandler.java:89)
-	at org.grails.datastore.mapping.proxy.JavassistProxyFactory$1.handleInvocationFallback(JavassistProxyFactory.java:118)
-	at org.grails.datastore.mapping.proxy.EntityProxyMethodHandler.handleInvocation(EntityProxyMethodHandler.java:57)
-	at org.grails.datastore.mapping.proxy.GroovyObjectMethodHandler.invoke(GroovyObjectMethodHandler.java:134)
-	at com.ttnd.linksharing.ResourceController.delete(ResourceController.groovy:8)
-	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
-	at com.ttnd.linksharing.ResourceControllerSpec.test delete(ResourceControllerSpec.groovy:18)
-</error>
+      <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="login Handler test" time="0.385" />
 
-      </testcase>
+      <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="test invalidate" time="0.114" />
 
-      <system-out><![CDATA[--Output from test delete--
+      <system-out><![CDATA[--Output from test index--
+--Output from login Handler test--
+sagar
+--Output from test invalidate--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from test delete--
+      <system-err><![CDATA[--Output from test index--
+--Output from login Handler test--
+--Output from test invalidate--
 ]]></system-err>
 
   </testsuite>

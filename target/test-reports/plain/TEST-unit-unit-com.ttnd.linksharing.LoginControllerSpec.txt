@@ -1,0 +1,17 @@
+Testsuite: com.ttnd.linksharing.LoginControllerSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 6.493 sec
+------------- Standard Output ---------------
+--Output from test index--
+--Output from login Handler test--
+sagar
+--Output from test invalidate--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test index--
+--Output from login Handler test--
+--Output from test invalidate--
+------------- ---------------- ---------------
+
+Testcase: test index took 5.891 sec
+Testcase: login Handler test took 0.386 sec
+Testcase: test invalidate took 0.114 sec

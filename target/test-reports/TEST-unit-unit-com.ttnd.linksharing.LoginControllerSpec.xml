@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="sagar" name="com.ttnd.linksharing.LoginControllerSpec" tests="3" time="6.493" timestamp="2016-03-02T10:37:53">
+  <properties />
+  <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="test index" time="5.891" />
+  <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="login Handler test" time="0.385" />
+  <testcase classname="com.ttnd.linksharing.LoginControllerSpec" name="test invalidate" time="0.114" />
+  <system-out><![CDATA[--Output from test index--
+--Output from login Handler test--
+sagar
+--Output from test invalidate--
+]]></system-out>
+  <system-err><![CDATA[--Output from test index--
+--Output from login Handler test--
+--Output from test invalidate--
+]]></system-err>
+</testsuite>

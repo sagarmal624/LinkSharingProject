@@ -13,19 +13,13 @@ class LoginController {
         }
     }
 
-    def loginHandler() {
-        String username = params.username
-        String password = params.password
+    def loginHandler(String username,String password,Boolean active) {
         if (username == "sagar" && password == "sagar") {
-            String active = params.active;
-            println active
-
-            if (active == "true") {
+//            println active
+            if (active) {
                 session.user = username
                 println session.user
-
                 forward(action: "index")
-
             } else {
                 flash.error = "Your Account is not active"
                 render flash.error
